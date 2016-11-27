@@ -75,6 +75,7 @@ app.ux.set_items_onclick = function (debug) {
                 Twitch.api({
                     method: '/users/' + user.name + '/follows/channels/' + target,
                     verb: 'DELETE',
+                    _method: 'DELETE',
                 }, function (e, a) {
                     app.ux.change_button_state('unfollow', target);
                 });
@@ -82,6 +83,7 @@ app.ux.set_items_onclick = function (debug) {
                 Twitch.api({
                     method: '/users/' + user.name + '/follows/channels/' + target,
                     verb: 'PUT',
+                    _method: 'PUT',
                 }, function (e, a) {
                     app.ux.change_button_state('follow', target);
                 });
