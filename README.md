@@ -17,8 +17,8 @@ Colons can be used to align columns.
 
 | Index        | Name           | Level  |
 | ------------- |:-------------:| -----:|
-| 1 | [Fight Club Quotes Generator](tree/master/1-fight-club-quotes-generator) | `Intermediate`
-| 2 | [Weather App](tree/master/2-weather-app) | `Intermediate`
-| 3 | [Wikipedia Viewer](tree/master/3-wikipedia-viewer) | `Intermediate`
-| 4 | [Easy Twitch](tree/master/4-easy-twitch) | `Intermediate`
-| 5 | [Pomodoro Clock](tree/master/5-pomodoro-clock) | `Advanced`
+| 1 | [Fight Club Quotes Generator](https://github.com/adrienZ/freecodecamp-projects/tree/master/1-fight-club-quotes-generator) | `Intermediate`
+| 2 | [Weather App](https://github.com/adrienZ/freecodecamp-projects/tree/master/2-weather-app) | `Intermediate`
+| 3 | [Wikipedia Viewer](https://github.com/adrienZ/freecodecamp-projects/tree/master/3-wikipedia-viewer) | `Intermediate`
+| 4 | [Easy Twitch](https://github.com/adrienZ/freecodecamp-projects/tree/master/4-easy-twitch) | `Intermediate`
+| 5 | [Pomodoro Clock](https://github.com/adrienZ/freecodecamp-projects/tree/master/5-pomodoro-clock) | `Advanced`
