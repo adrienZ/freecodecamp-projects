@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Fight Club quote generator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onload="random();">
+    <h3 class="text-center">Fight Club quote generator</h3>
+    <a href="https://github.com/adrienZ" target="_blank" id="git"><img class="center-block" src="http://icons.iconarchive.com/icons/limav/flat-gradient-social/512/Github-icon.png" width="50px" height="50px"></a>
+    <div class="quote-box">
+        <div class="container">
+            <div class="row">
+                <div class="box">
+                    <blockquote>
+                        <p id="text"></p>
+                        <figcaption id="author">— Crazy hunch-backed old guy from the movie Aladdin</figcaption>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="buttons">
+        <button class="btn btn-default" onclick="random()">New quote</button>
+
+        <a id="twitter" href="https://twitter.com/intent/tweet?text=Check%20this%20awesome%20Fight%20Club%20quotes%20generator%20! " target="_bank">
+Tweet this</a>
+    </div>
+
+    <div class="container">
+        <div class="footer"></div>
+    </div>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+$list_width: 25%;
+$video_width: 100% - $list_width;
+$ui_list_img_size: 50px;
+$container: 95%;
+$top_bar_height: 50px;
+@include keyframes(fadeIn) {
+    0% {
+        opacity: 0.4;
+        transform: translate3d(-100%, 0, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@include keyframes(fadeOut) {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}

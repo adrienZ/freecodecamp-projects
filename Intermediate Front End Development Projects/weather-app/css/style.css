@@ -1,0 +1,96 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+body {
+    height: 100vh;
+    font-family: 'Source Sans Pro', sans-serif !important;
+    background-color: #ededed !important;
+}
+
+#loader {
+    height: 100vh;
+    background: url('https://www.asus.com/support/images/support-loading.gif') no-repeat center;
+    background-size: 110px;
+}
+
+#panel {
+    border-radius: 0px !important;
+    height: 400px;
+    box-shadow: 0px 3px 4px rgba(128, 128, 128, 0.5)!important;
+    border-left: 1px solid rgba(128, 128, 128, 0.5) !important;
+    border-right: 1px solid rgba(128, 128, 128, 0.5) !important;
+}
+
+.inline {
+    display: inline-block !important;
+}
+
+.menu {
+    background: white;
+    height: 80px;
+    margin-bottom: 50px;
+    color: #000;
+    box-shadow: 0px 4px 3px rgba(128, 128, 128, 0.5);
+}
+
+.ui {
+    width: 80px;
+    height: 80px;
+    margin: auto;
+    padding-bottom: 10px;
+    border-bottom: 1px solid grey;
+    width: 90%;
+}
+
+#main {
+    font-weight: bold;
+    font-size: 1.8em;
+}
+
+#second {
+    font-size: 1.2em;
+}
+
+.informations {
+    margin: 20px 40px;
+}
+
+.informations p,
+.points p {
+    margin: 20px 0;
+    text-align: right;
+}
+
+.value div {
+    margin: 20px 0;
+}
+
+.informations,
+.value {
+    font-size: 1.2em;
+}
+
+#maps {
+    height: 400px;
+}
+
+.mapholder {
+    max-height: 100%;
+    box-shadow: 0px 3px 4px rgba(128, 128, 128, 0.5)!important;
+    border-left: 1px solid rgba(128, 128, 128, 0.5) !important;
+    border-right: 1px solid rgba(128, 128, 128, 0.5) !important;
+}
+
+button {
+    height: 30px;
+    width: 100%;
+    background: #2196F3;
+    color: #ededed !important;
+    border: none;
+    transition: 0.3s;
+    box-shadow: 0px 3px 0px #2196F3;
+    margin-bottom: 10px !important;
+}
+
+button.active {
+    box-shadow: 0px 3px 0px #2045a7;
+    transition: 0.3s;
+}

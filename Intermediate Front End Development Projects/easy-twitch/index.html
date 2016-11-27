@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Easy.tv | Lightweight Twitch.tv client</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">           </script>
+        <![endif]-->
+</head>
+
+<body>
+    <section class="connect">
+        <p>Log in on Twitch.tv to begin</p>
+        <img src="http://ttv-api.s3.amazonaws.com/assets/connect_dark.png" class="twitch-connect" href="#" />
+        <a href="http://adrienzaganelli.com/easy.tv/guest/index.html">Don't Have an Account?, try the guest version !</a>
+        <div class="dl-app">
+            <ul>
+                <!--
+                <li>
+                    <a href="#">
+                         <img src="img/os/windows-icon.png" height="64px" alt="">
+                    </a>
+                </li>
+-->
+                <li>
+                    <a href="app-files/(Alpha) Easy.tv.app" download="(Alpha) Easy.tv.app">
+                        <img src="img/os/apple-icon.png" alt="" height="<64px">
+                    </a>
+                </li>
+                <!--
+<li>
+    <a href="#">
+        <img src="img/os/linux-icon.png" alt="" height="64px">
+    </a>
+</li>
+-->
+            </ul>
+        </div>
+    </section>
+    <section class="top-bar">
+        <div class="container">
+            <h1>Easy.tv</h1>
+        </div>
+    </section>
+
+    <section class="list">
+        <ul class="online"></ul>
+        <ul class="offline"></ul>
+        <div class="options">
+            <a href="#" id="import">import</a>
+        </div>
+    </section>
+
+    <section class="video hide">
+        <div class="background-blur"></div>
+        <header>
+            <button>Welcome here ! </button>
+        </header>
+        <iframe src="about:blank" id="video_embed" frameborder="0" scrolling="no" height="378" width="620" allowfullscreen>
+            Too bad ! your browser does not support iframes :(
+        </iframe>
+        <footer>
+            <ul>
+
+                <li> <a href="https://twitter.com/intent/tweet?text=I just made my list to Twitch and chill, make yours at http://adrienzaganelli.com/easy.tv/" target='_blank'>Spread the World</a> <i class="fa fa-twitter"></i>
+                </li>
+                <li> <a href="https://twitter.com/adri_zag" target='_blank'>Made by @adri_zag</a>
+                </li>
+                <li>
+                    <a href="https://github.com/adrienZ/easy-twitch"><i class="fa fa-github"></i></a>
+                </li>
+            </ul>
+        </footer>
+    </section>
+
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/handlebars/handlebars.min.js"></script>
+    <script id="list-item" type="text/x-handlebars-template">
+        <li id="{{name}}" class="{{state}}" data-status="{{status}}" data-bg="{{video_banner}}">
+            <button class="delete"></button>
+            <a href="#">
+                <div class="state"></div>
+
+                <header>
+                    <img height="40" width="40" src="{{logo}}" alt="">
+                    <h1>{{display_name}}</h1>
+                </header>
+                <footer>
+                    <p>{{current_game}}</p>
+                </footer>
+            </a>
+        </li>
+    </script>
+    <script id="user-item" type="text/x-handlebars-template">
+        <section class="user">
+            <h1>{{display_name}}</h1>
+            <img src="{{logo}}" alt="">
+        </section>
+    </script>
+    <script src="js/twitch.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+<!-- ------------- CDN LINKS -------------
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.2/handlebars.min.js"></script>
+-->
+
+
+</html>
