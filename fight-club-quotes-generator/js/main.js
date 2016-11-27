@@ -47,7 +47,6 @@ var quotes = [
 function random() {
 
     var i = Math.floor(Math.random() * quotes.length)
-    console.log(i);
     var quote = quotes[i][0];
     var author = quotes[i][1];
 
@@ -55,5 +54,4 @@ function random() {
     document.getElementById("text").innerHTML = quote;
     document.getElementById("author").innerHTML = "- " + author;
     document.getElementById("twitter").href = "https://twitter.com/intent/tweet?text=" + quote + " - " + author + " %23FightClub";
-    console.log(document.getElementsByClassName("twitter-share-button").href);
 }

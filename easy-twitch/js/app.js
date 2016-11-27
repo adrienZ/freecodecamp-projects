@@ -1,5 +1,6 @@
 var app = {
     $: {},
+    clientId : "jdwjws10jv2kyak1gh4nvyibd1t5370"
 }
 app.$.connect = $('.connect');
 app.$.list = $('.list');
@@ -74,6 +75,7 @@ app.ux.set_items_onclick = function (debug) {
                 Twitch.api({
                     method: '/users/' + user.name + '/follows/channels/' + target,
                     verb: 'DELETE',
+                    _method: 'DELETE',
                 }, function (e, a) {
                     app.ux.change_button_state('unfollow', target);
                 });
@@ -81,6 +83,7 @@ app.ux.set_items_onclick = function (debug) {
                 Twitch.api({
                     method: '/users/' + user.name + '/follows/channels/' + target,
                     verb: 'PUT',
+                    _method: 'PUT',
                 }, function (e, a) {
                     app.ux.change_button_state('follow', target);
                 });
@@ -94,9 +97,9 @@ app.$.import.on('click', function () {
     if (search === null) {
         return false;
     }
-    $.getJSON(api.kraken + '/users/' + search + '/follows/channels', function (data2) {
+    $.getJSON(api.kraken + '/users/' + search + '/follows/channels' + "?client_id=" + app.clientId, function (data2) {
         $.each(data2.follows, function (index, new_item) {
-            $.getJSON(api.kraken + '/streams/' + new_item.channel.name, function (new_stream) {
+            $.getJSON(api.kraken + '/streams/' + new_item.channel.name + "?client_id=" + app.clientId, function (new_stream) {
                 var block = false;
                 $.each(user.list, function (index, check) {
                     if (new_item.channel.name === check.channel.name) {

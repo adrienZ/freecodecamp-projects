@@ -9,7 +9,7 @@ function templating(parent, source, object) {
     parent.append(template(object));
 }
 Twitch.init({
-    clientId: 'jdwjws10jv2kyak1gh4nvyibd1t5370'
+    clientId: app.clientId
 }, function (error, status) {
 
     if (error) {
@@ -27,14 +27,14 @@ Twitch.init({
             user.name = channel.name;
 
             templating($('.top-bar .container'), $('#user-item'), channel);
-            $.getJSON(api.kraken + '/users/' + user.name + '/follows/channels', function (data) {
+            $.getJSON(api.kraken + '/users/' + user.name + '/follows/channels' + "?client_id=" + app.clientId, function (data) {
                 user.follows = data.follows;
                 user.list = Object.create(user.follows);
                 app.$.connect.remove();
 
                 $.each(user.list, function (index, chaine) {
                     //push dom
-                    $.getJSON(api.kraken + '/streams/' + chaine.channel.name, function (is_streaming) {
+                    $.getJSON(api.kraken + '/streams/' + chaine.channel.name + "?client_id=" + app.clientId, function (is_streaming) {
                         app.ux.create_item(is_streaming, chaine);
                         //define onlick on list items
                         app.ux.set_items_onclick(app.$.items.parent().find('#' + chaine.channel.name));
