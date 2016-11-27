@@ -4,6 +4,8 @@
 
 ### Use the Twitchtv JSON API
 
+**[DEMO LINK](https://adrienz.github.io/freecodecamp-projects/4-easy-twitch/)**
+
 - **Objective**: Build a CodePen.io app that is functionally similar to this: <https://codepen.io/FreeCodeCamp/full/Myvqmo/>.
 - **Rule #1**: Don't look at the example project's code. Figure it out for yourself.
 - **Rule #2**: Fulfill the below user stories. Use whichever libraries or APIs you need. Give it your own personal style.

@@ -20,7 +20,7 @@ app.ux.change_button_state = function (action, target) {
     }
 };
 app.ux.generate_content = function (action, generator) {
-    app.$.video.attr('src', 'http://player.twitch.tv/?channel=' + generator._to_find);
+    app.$.video.attr('src', 'https://player.twitch.tv/?channel=' + generator._to_find);
     app.$.main.find('.background-blur').css('background-image', 'url(' + generator._background + ')');
     generator._button_state = action;
     app.$.follow_button.attr('id', generator._to_find);
